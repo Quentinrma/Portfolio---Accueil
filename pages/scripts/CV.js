@@ -1,4 +1,3 @@
-
 const Header = document.createElement("header");
 Header.innerHTML = `<img
       draggable="false"
@@ -13,7 +12,7 @@ Header.innerHTML = `<img
     </nav>`;
 document.body.appendChild(Header);
 
-const CV = fetch("../components/CV.json"); // Récupération du fichier JSON
+const CV = fetch("./data/CV.json"); // Récupération du fichier JSON
 CV.then((response) => response.json()) // Conversion de la réponse en JSON
   .then((data) => {
     console.log(data);
@@ -90,7 +89,7 @@ function generateNav(cvData) {
   });
 }
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../components/CV.json")
+  fetch("./data/CV.json")
     .then((response) => response.json())
     .then((data) => {
       generatePage(data);

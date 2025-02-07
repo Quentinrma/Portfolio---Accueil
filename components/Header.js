@@ -9,7 +9,7 @@ document.write(`
       <nav id="nav">
         <ul>
           <li><a href="../index.html">Accueil</a></li> 
-                  <li><a href="./CV.html">CV</a></li>
+                  <li><a href="../pages/CV.html">CV</a></li>
 
 
         </ul>
