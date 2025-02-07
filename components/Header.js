@@ -2,7 +2,7 @@ document.write(`
     <header class="sticky">
       <img
         draggable="false"
-        src="https://avatars.githubusercontent.com/u/165953054?v=4"
+        src="../assets/img/logo QR.png"
         alt=""
       />
 
