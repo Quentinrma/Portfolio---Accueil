@@ -8,7 +8,8 @@ document.write(`
 
       <nav id="nav">
         <ul>
-          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../index.html">Accueil</a></li> 
+          
         </ul>
       </nav>
 </header>`);
