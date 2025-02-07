@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../Styles/Calculatrice.css" />
+  </head>
+  <body>
+    <script src="../components/Header.js"></script>
+    <main>
+      <section>
+        <h2>Calculatrice</h2>
+        <p class="warning">
+          Veillez à ne pas oublier de fermer les parenthèses lors de son
+          utilisation
+        </p>
+        <script src="../JS/Calculatrice.js"></script>
+        <div class="calculator">
+          <input type="text" id="display" readonly />
+          <div class="buttons">
+            <div class="basic">
+              <button onclick="appendToDisplay('1')">1</button>
+              <button onclick="appendToDisplay('2')">2</button>
+              <button onclick="appendToDisplay('3')">3</button>
+              <button onclick="appendToDisplay('+')">+</button>
+              <button onclick="appendToDisplay('4')">4</button>
+              <button onclick="appendToDisplay('5')">5</button>
+              <button onclick="appendToDisplay('6')">6</button>
+              <button onclick="appendToDisplay('-')">-</button>
+              <button onclick="appendToDisplay('7')">7</button>
+              <button onclick="appendToDisplay('8')">8</button>
+              <button onclick="appendToDisplay('9')">9</button>
+              <button onclick="appendToDisplay('*')">*</button>
+              <button onclick="appendToDisplay('0')">0</button>
+              <button onclick="appendToDisplay('.')">.</button>
+              <button onclick="calculate()">=</button>
+              <button onclick="appendToDisplay('/')">/</button>
+              <button onclick="clearDisplay()">C</button>
+            </div>
+            <div class="advanced">
+              <button onclick="appendToDisplay('sqrt(')">sqrt</button>
+              <button onclick="appendToDisplay('log(')">log</button>
+              <button onclick="appendToDisplay('exp(')">exp</button>
+              <button onclick="appendToDisplay('sin(')">sin</button>
+              <button onclick="appendToDisplay('cos(')">cos</button>
+              <button onclick="appendToDisplay('tan(')">tan</button>
+              <button onclick="appendToDisplay('(')">(</button>
+              <button onclick="appendToDisplay(')')">)</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../components/Footer.js"></script>
+  </body>
+</html>
