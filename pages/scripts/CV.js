@@ -1,16 +1,16 @@
-const Header = document.createElement("header");
-Header.innerHTML = `<img
-      draggable="false"
-      src="https://avatars.githubusercontent.com/u/165953054?v=4"
-      alt=""
-    />
-    <nav id="nav">
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../pages/CV.html">CV</a></li>
-      </ul>
-    </nav>`;
-document.body.appendChild(Header);
+// const Header = document.createElement("header");
+// Header.innerHTML = `<img
+//       draggable="false"
+//       src="https://avatars.githubusercontent.com/u/165953054?v=4"
+//       alt=""
+//     />
+//     <nav id="nav">
+//       <ul>
+//         <li><a href="../index.html">Accueil</a></li>
+//         <li><a href="../pages/CV.html">CV</a></li>
+//       </ul>
+//     </nav>`;
+// document.body.appendChild(Header);
 
 const CV = fetch("./data/CV.json"); // Récupération du fichier JSON
 CV.then((response) => response.json()) // Conversion de la réponse en JSON
