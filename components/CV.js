@@ -1,7 +1,4 @@
-// const Header = document.write(`
-//   <header class="sticky">
-//
-// </header>`);
+
 const Header = document.createElement("header");
 Header.innerHTML = `<img
       draggable="false"
@@ -15,6 +12,7 @@ Header.innerHTML = `<img
       </ul>
     </nav>`;
 document.body.appendChild(Header);
+
 const CV = fetch("../components/CV.json"); // Récupération du fichier JSON
 CV.then((response) => response.json()) // Conversion de la réponse en JSON
   .then((data) => {
@@ -22,7 +20,7 @@ CV.then((response) => response.json()) // Conversion de la réponse en JSON
     generatePage(data);
   })
   .catch((error) => console.error("Error fetching CV:", error)); // Gestion des erreurs
-// console.log(CV);  // Affichage de la promesse
+console.log(CV); // Affichage de la promesse
 
 function generatePage(cvData) {
   // Fonction pour générer le contenu du CV
@@ -95,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("../components/CV.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       generatePage(data);
       generateNav(data);
     })
