@@ -3,6 +3,7 @@ CV.then((response) => response.json()) // Conversion de la réponse en JSON
   .then((data) => {
     console.log(data);
     generatePage(data);
+    generateNav(data); // Ajout de l'appel à generateNav ici
   })
   .catch((error) => console.error("Error fetching CV:", error)); // Gestion des erreurs
 console.log(CV); // Affichage de la promesse
@@ -74,12 +75,3 @@ function generateNav(cvData) {
     navul.appendChild(navItem); // Ajout de l'élément dans la navigation
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/CV.json")
-    .then((response) => response.json())
-    .then((data) => {
-      generatePage(data);
-      generateNav(data);
-    })
-    .catch((error) => console.error("Error fetching CV:", error));
-});
