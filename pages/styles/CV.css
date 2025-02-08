@@ -1,15 +1,16 @@
+
 #cv-nav {
   padding: 20px;
   height: 100%;
 }
 #cv-nav ul {
   position: sticky;
-  top: 40%;margin-bottom: 100px;
+  top: 40%;
+  margin-bottom: 100px;
 }
 #cv-nav li {
   list-style-type: none;
   padding: 10px 0;
-
 }
 #cv-nav a {
   color: black;
@@ -27,9 +28,6 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  background: url(../../assets/img/bgcv.png);
-  background-size: cover;
-  opacity: 1;
 }
 
 .CV-section {
