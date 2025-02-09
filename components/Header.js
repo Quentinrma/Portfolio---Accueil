@@ -1,5 +1,5 @@
 document.write(`   <script src='../script.js'></script>
-    <header class="sticky">
+    <header >
       <img
         draggable="false"
         src="../assets/img/logo QR.png"
