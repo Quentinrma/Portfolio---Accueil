@@ -26,7 +26,7 @@ body {
 }
 
 #topButton:hover {
-  background-color: #333;
+  background-color: #7c7c7c;
 }
 
 /* Default styles for PC */
@@ -87,11 +87,29 @@ main {
 }
 #accueil {
   width: 90%;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff38;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px auto;
   padding: 10px;
   height: 100%;
+}
+#accueil img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  animation: spin 2s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* Media query for tablets and phones */
 @media (max-width: 768px) {
