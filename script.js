@@ -1,15 +1,22 @@
-function handleScrollAndResize() {
+function Stickyheader() {
   const header = document.querySelector("header");
-  if (window.innerWidth > 768) {
-    if (window.scrollY > 0) {
-      header.classList.add("sticky");
+  if (header) {
+    if (!header.classList.contains("sticky")) {
+      if (window.innerWidth > 768) {
+        header.classList.add("sticky");
+      }
     } else {
-      header.classList.remove("sticky");
+      if (window.innerWidth < 768) {
+        header.classList.remove("sticky");
+      }
     }
-  } else {
-    header.classList.remove("sticky");
   }
 }
 
-window.addEventListener("scroll", handleScrollAndResize);
-window.addEventListener("resize", handleScrollAndResize);
+Stickyheader();
+
+window.addEventListener("resize", Stickyheader);
+
+
+// -----------------------------
+

@@ -3,11 +3,10 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: fixed url("./assets/img/bgcv.png") 100%;
   width: 100%;
-  background: fixed url("./assets/img/fond.jpg") 100%;
-  opacity: 1;
-  background-position-x: left;
-  background-size: cover;
+  background-size: contain;
+  background-position-x: center;
 }
 /* Default styles for PC */
 header {
@@ -62,6 +61,7 @@ nav ul {
 nav li {
   margin: 0 10px;
 }
+main{padding: 0 10px;}
 
 /* Media query for tablets and phones */
 @media (max-width: 768px) {
