@@ -61,10 +61,16 @@ nav ul {
 nav li {
   margin: 0 10px;
 }
-main{padding: 0 10px;}
+main {
+  padding: 0 10px;
+}
 
 /* Media query for tablets and phones */
 @media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   header {
     flex-direction: column;
     height: auto;
