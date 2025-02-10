@@ -64,7 +64,14 @@ nav li {
 main {
   padding: 0 10px;
 }
-
+#accueil {
+  width: 90%;
+  background-color: #ffffff38;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  padding: 10px;
+  height: 100%;
+}
 /* Media query for tablets and phones */
 @media (max-width: 768px) {
   body {
