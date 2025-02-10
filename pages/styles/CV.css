@@ -60,3 +60,14 @@
   margin: 10px 0;
   font-weight: normal;
 }
+
+@media screen and (max-width: 1024px) {
+  #cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .CV-section li {
+    width: 90%;padding: 5px 0;
+  }
+}
