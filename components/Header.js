@@ -1,5 +1,6 @@
 document.write(`   <script src='../script.js'></script>
     <header >
+    <script src="../components/Topbutton.js"></script>
       <img
         draggable="false"
         src="../assets/img/logo QR.png"
