@@ -10,6 +10,7 @@ document.write(`   <script src='../script.js'></script>
       <nav id="nav">
         <ul>
           <li><a href="../index.html">Accueil</a></li> 
+          <li><a href="../pages/A-propos.html">A propos</a></li>
           <li><a href="../pages/CV.html">CV</a></li>
           <li><a href="../pages/Prototypes.html">Prototypes</a></li>
 
