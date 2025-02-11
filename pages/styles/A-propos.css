@@ -33,7 +33,7 @@ section p {
   section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
-    margin: 10px auto; /* Fixed margin issue */
+    margin: 0 auto; /* Fixed margin issue */
     width: 100%;
   }
 
@@ -43,8 +43,8 @@ section p {
 
   section p {
     max-width: 500px;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     text-align: justify;
   }
 }
