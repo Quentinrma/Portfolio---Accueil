@@ -35,6 +35,7 @@ section p {
 
   section img {
     max-width: 100%;
-    max-height: auto;margin-top: 20px;
+    max-height: auto;
+    margin-top: 20px;
   }
 }
