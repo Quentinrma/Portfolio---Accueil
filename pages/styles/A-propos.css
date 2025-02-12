@@ -43,7 +43,7 @@ section p {
 
   section p {
     max-width: 500px;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     text-align: justify;
   }
