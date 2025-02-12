@@ -1,4 +1,4 @@
-#cv-nav {
+/* #cv-nav {
   padding: 20px;
   height: 100%;
 }
@@ -59,11 +59,27 @@
 .CV-section ul li {
   margin: 10px 0;
   font-weight: normal;
-}
-@media screen and (max-width: 1024px) {
+} */
+@media screen and (max-width: 1023px) {
+  #cv-nav {
+    padding: 15px;
+    height: 100%;
+    margin-top: 25px;
+  }
+
+  #cv-nav li {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  #cv-nav a {
+    color: black;
+    text-decoration: none;
+  }
+  #cv-nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .grid {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
   #cv-content {
@@ -82,29 +98,84 @@
 
   .CV-section ul {
     padding: 0;
-    width: 90%;
-    margin-left: 30px;
+    width: 100%;
+    margin: 20px;
   }
   .CV-section ul li {
     margin: 10px 0;
-    width: 90%;
+    width: 100%;
     font-weight: normal;
   }
   .CV-section h2 {
     text-align: left;
-    margin: 30px;
   }
   .CV-section h3 {
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #cv-nav {
+    padding: 20px;
+    height: 100%;
+  }
+  #cv-nav ul {
+    position: sticky;
+    top: 40%;
+    margin-bottom: 100px;
+  }
+  #cv-nav li {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  #cv-nav a {
+    color: black;
+    text-decoration: none;
+  }
+  #cv-nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #cv-content {
+    width: 90%;
+  }
+  #cv-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .CV-section {
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+  .CV-section h2 {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .CV-section h3 {
+    margin-bottom: 10px;
+    margin-left: 50px;
   }
   .CV-section ul {
     padding: 0;
     width: 100%;
+    margin-left: 50px;
   }
   .CV-section ul li {
     margin: 10px 0;
-  
     font-weight: normal;
   }
 }
