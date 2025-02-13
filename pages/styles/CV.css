@@ -107,6 +107,8 @@
   }
   .CV-section ul {
     padding: 0;
+    max-width: 100%;
+
     width: 100%;
   }
   .CV-section ul li {
