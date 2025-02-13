@@ -53,12 +53,18 @@
 }
 .CV-section ul {
   padding: 0;
-  width: 100%;
+  max-width: 75%;
   margin-left: 50px;
 }
 .CV-section ul li {
   margin: 10px 0;
   font-weight: normal;
+}
+.stars {
+  display: inline-flex;
+  font-size: 13px;
+  float: right;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .grid {
@@ -104,7 +110,7 @@
   }
   .CV-section ul li {
     margin: 10px 0;
-  
+
     font-weight: normal;
   }
 }

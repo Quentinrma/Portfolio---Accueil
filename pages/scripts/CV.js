@@ -48,7 +48,13 @@ function generatePage(cvData) {
         const ul = document.createElement("ul");
         subSection.items.forEach((item) => {
           const li = document.createElement("li");
-          li.textContent = item;
+          if (item.name && item.niveau) {
+            const stars = '⭐'.repeat(item.niveau);
+            const circles = '⚫'.repeat(5 - item.niveau);
+            li.innerHTML = `${item.name} <span class="stars">${stars}${circles}</span>`;
+          } else {
+            li.textContent = item;
+          }
           ul.appendChild(li);
         });
 
@@ -59,7 +65,6 @@ function generatePage(cvData) {
     container.appendChild(sectionDiv);
   });
 }
-
 function generateNav(cvData) {
   // Fonction pour générer la navigation du CV
   const nav = document.getElementById("cv-nav");
