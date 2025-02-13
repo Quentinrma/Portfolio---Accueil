@@ -113,8 +113,8 @@
     width: 100%;
     margin-left: 50px;
   }
-  .CV-section ul li {
-    margin: 10px 0;
-    font-weight: normal;
+    .CV-section ul li {
+      margin: 10px 0;
+      font-weight: normal;
+    }
   }
-}

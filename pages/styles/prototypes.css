@@ -12,6 +12,14 @@ section {
   padding: 10px 20px;
   border-radius: 25px;
 }
+
+.containergrid {
+  display: grid;
+  margin: auto;
+  gap: 10px;
+  justify-items: center; /* Centrer horizontalement les éléments */
+}
+
 .containergrid div {
   min-height: 300px;
   display: flex;
@@ -24,14 +32,9 @@ section {
   background-color: rgba(255, 255, 255, 0.44);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 .containergrid p {
   max-width: 300px;
-}
-.containergrid {
-  display: grid;
-  margin: auto;
-  gap: 10px;
-  justify-items: center; /* Centrer horizontalement les éléments */
 }
 
 /* Media query for computers */
@@ -42,6 +45,8 @@ section {
     padding: 30px;
   }
 }
+
+/* Media query for tablets */
 @media (min-width: 769px) and (max-width: 1023px) {
   .containergrid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -49,13 +54,15 @@ section {
     padding: 30px;
   }
 }
-/* Media query for  tablets */
+
+/* Media query for tablets */
 @media (max-width: 768px) {
   .containergrid {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 }
+
 /* Media query for phones */
 @media (max-width: 480px) {
   .containergrid {

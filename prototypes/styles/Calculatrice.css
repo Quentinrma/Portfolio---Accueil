@@ -5,6 +5,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #636363;
 }
+
 #display {
   width: 100%;
   height: 40px;
@@ -12,6 +13,7 @@
   text-align: right;
   font-size: 18px;
 }
+
 .warning {
   color: rgb(196, 0, 0);
   text-decoration: underline;
@@ -23,50 +25,38 @@
   width: 100%;
   gap: 10px;
 }
-.basic {
-  display: grid;
-  width: 50%;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-}
+
+.basic,
 .advanced {
   display: grid;
   width: 50%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px;
-
   gap: 5px;
 }
+
+.advanced {
+  grid-template-rows: 50px;
+}
+
 button {
   width: 100%;
   height: 40px;
   font-size: 18px;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
   .calculator {
-    margin: auto;
-    padding: 20px;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: #636363;
   }
+
   .buttons {
     flex-direction: column;
     align-items: center;
   }
-  .basic {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-  }
-  .advanced {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px;
 
-    gap: 5px;
+  .basic,
+  .advanced {
+    width: 100%;
   }
 }
