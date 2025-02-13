@@ -67,7 +67,7 @@ function generateNav(cvData) {
     const navItem = document.createElement("li");
     const navlink = document.createElement("a");
     navlink.href = `#${section.title}`;
-    navlink.textContent = `${section.icon} ${section.title}`;
+    navlink.textContent = `${section.title}`;
     navItem.appendChild(navlink);
     navul.appendChild(navItem);
   });
