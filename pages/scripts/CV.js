@@ -48,8 +48,8 @@ function generatePage(cvData) {
         subSection.items.forEach((item) => {
           const li = document.createElement("li");
           if (item.name && item.niveau) {
-            const stars = '⭐'.repeat(item.niveau);
-            const circles = '⚫'.repeat(5 - item.niveau);
+            const stars = "⭐".repeat(item.niveau);
+            const circles = "⚫".repeat(5 - item.niveau);
             li.innerHTML = `${item.name} <span class="stars">${stars}${circles}</span>`;
           } else {
             li.textContent = item;
